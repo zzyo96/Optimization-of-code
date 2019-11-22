@@ -1,0 +1,14 @@
+var format = function(text){
+  if(!text){
+    return
+  }
+  var reg = getRegExp('\\\\n','g')
+  return text.replace(reg,'\n&nbsp;&nbsp;')
+}
+
+// 他是wxs语法和js一样，但不是js，尤其不支持es6,但是支持es5
+// 可以在wxml中调用，也可以在外部新建，在wxml中引入使用
+
+module.exports = {
+  format:format
+}

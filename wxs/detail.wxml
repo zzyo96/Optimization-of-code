@@ -1,0 +1,10 @@
+<!--在wxml中可以调用wxs文件的函数-->
+
+<wxs src = './filter.wxs' module="util"/>
+<view>
+    <text decode="{{true}}">{{util.format(contentText)}}</text>
+</view>
+
+<!--<wxs module = "util">-->
+
+<!--</wxs>-->
